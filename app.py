@@ -1,6 +1,10 @@
 import speech_recognition as sr
 import sounddevice as sd
 import wavio as wv
+import os
+
+if ~os.path.isdir('files') :
+    os.mkdir('files')
 
 filename = "./files/audio1.wav"
 freq = 44100
